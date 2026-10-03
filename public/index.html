@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Complaint System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Complaint System</h1>
+
+        <p class="subtitle">
+            Submit your complaint and help us improve the campus.
+        </p>
+
+        <form id="complaintForm">
+
+            <label for="name">Student Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="category">Complaint Category</label>
+
+            <select id="category" required>
+                <option value="">Select category</option>
+                <option value="Broken classroom fan">
+                    Broken classroom fan
+                </option>
+                <option value="Water leakage">
+                    Water leakage
+                </option>
+                <option value="Wi-Fi not working">
+                    Wi-Fi not working
+                </option>
+                <option value="Broken lights">
+                    Broken lights
+                </option>
+                <option value="Cleaning problem">
+                    Cleaning problem
+                </option>
+                <option value="Hostel issue">
+                    Hostel issue
+                </option>
+                <option value="Electrical issue">
+                    Electrical issue
+                </option>
+                <option value="Other">
+                    Other
+                </option>
+            </select>
+
+            <label for="title">Complaint Title</label>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter complaint title"
+                required
+            >
+
+            <label for="description">Description</label>
+
+            <textarea
+                id="description"
+                rows="5"
+                placeholder="Describe your complaint"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Submit Complaint
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <a href="admin.html" class="admin-link">
+            Admin Panel
+        </a>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
